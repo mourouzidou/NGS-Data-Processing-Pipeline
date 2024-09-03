@@ -1,5 +1,3 @@
-
-
 # Ensure entries.txt exists
 if [ ! -f ../entries.txt ]; then
     echo "entries.txt not found in the parent directory!"
@@ -72,10 +70,3 @@ do
 
     samtools index $i
 done
-
-
-
-
-
-    
-
