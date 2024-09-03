@@ -1,5 +1,8 @@
 ## NGS Data Processing Pipeline for Sequence Retrieval, Trimming, and Analysis
 
+## Requirements:
+fastqc, multiqc, sickle, STAR 
+
 This project includes a pipeline for handling Next-Generation Sequencing (NGS) data for :
 
 * retrieving sequence data from public repositories
@@ -23,14 +26,16 @@ The script will download the corresponding sequencing data in FASTQ format.
 bash getSRR_1.sh <SRR_ID>
 ```
 ### 2. Quality Trimming
-
+Place your entries.txt file in the same directory as the script.
 This script processes RNA-Seq data by performing read trimming, quality control, read mapping, and gene expression quantification.
 
 ``` bash
 
 bash trimming_2.sh <input_fastq> <output_fastq>
 
-``` 
+```
+Output: The final outputs are BAM files (from alignment) and count files (from gene expression quantification), which are used for downstream analyses like differential expression analysis.
+
 
 ### 3. NGS Analysis
 
