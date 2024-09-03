@@ -1,8 +1,10 @@
 ## NGS Data Processing Pipeline for Sequence Retrieval, Trimming, and Analysis
 
-## Requirements:
+### Requirements:
 fastqc, multiqc, sickle, STAR 
 
+
+### Overview
 This project includes a pipeline for handling Next-Generation Sequencing (NGS) data for :
 
 * retrieving sequence data from public repositories
